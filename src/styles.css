@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+:root {
+  font-family: 'Poppins', sans-serif;
+
+  line-height: 24px;
+  font-weight: 400;
+
+  margin: 0;
+  padding: 0;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  overflow-y: hidden;
+
+  /* Tailwind */
+  @apply bg-background-view;
+  @apply text-text-color;
+  @apply antialiased;
+
+  overscroll-behavior-y: none;
+}
+
+
+.big-sidebar {
+  /* Tailwind */
+  @apply bg-background-sidebar;
+  @apply w-[349px];
+  @apply h-full;
+  @apply border-r border-border
+}
+
+.big-sidebar_light {
+  /* Tailwind */
+  @apply bg-background-sidebar;
+  @apply w-[140px];
+  @apply h-full;
+  @apply border-r border-border
+}
+
+.small-sidebar {
+  @apply bg-background-sidebar;
+  @apply w-[80px];
+  @apply h-full;
+  @apply border-r border-border
+}
+
+.general-view {
+  @apply bg-background-view;
+  @apply h-full;
+  width: calc(100% - 348px - 80px);
+}
+
+.general-view_light {
+  @apply bg-background-sidebar;
+  @apply h-full;
+  @apply pl-[40px];
+}
+
+a {
+  @apply no-underline;
+  @apply hover:underline;
+}
