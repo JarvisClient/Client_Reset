@@ -49,9 +49,9 @@ jobs:
         with:
           name: ${{ matrix.platform }}
           path: |
-            ./src-tauri/target/release/Jarvis-Purge-Tool
+            ./src-tauri/target/release/Jarvis Purge Tool
             ./src-tauri/target/release/bundle/dmg/*.dmg
-            ./src-tauri/target/release/Jarvis-Purge-Tool.exe
+            ./src-tauri/target/release/Jarvis Purge Tool.exe
 
   release:
     permissions:
