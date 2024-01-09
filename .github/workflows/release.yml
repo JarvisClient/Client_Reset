@@ -49,7 +49,7 @@ jobs:
         with:
           name: ${{ matrix.platform }}
           path: |
-            ./src-tauri/target/release/Jarvis Purge Tool
+            ./src-tauri/target/release/jarvis-purge-tool
             ./src-tauri/target/release/bundle/dmg/*.dmg
             ./src-tauri/target/release/Jarvis Purge Tool.exe
 
@@ -68,8 +68,8 @@ jobs:
       - name: Package linux binary for release
         run: |
           cd ./ubuntu-latest/
-          chmod u+x Jarvis Purge Tool
-          tar -czvf Jarvis_${{ github.event.inputs.version }}_Linux_Release.tar.gz Jarvis Purge Tool
+          chmod u+x jarvis-purge-tool
+          tar -czvf Jarvis_${{ github.event.inputs.version }}_Linux_Release.tar.gz jarvis-purge-tool
       - name: Package macOS binary for release
         run: |
           cd ./macos-latest/bundle/dmg/
