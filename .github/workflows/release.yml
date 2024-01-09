@@ -77,7 +77,7 @@ jobs:
       - name: Package Windows binary for release
         run: |
           cd ./windows-latest/
-          zip Jarvis_${{ github.event.inputs.version }}_Windows_Release.zip jarvis.exe
+          zip Jarvis_${{ github.event.inputs.version }}_Windows_Release.zip "Jarvis Purge Tool.exe"
 
       - name: Create GitHub release
         uses: softprops/action-gh-release@v1
